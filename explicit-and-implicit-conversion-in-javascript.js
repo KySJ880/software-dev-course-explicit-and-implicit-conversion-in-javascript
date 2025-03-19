@@ -19,14 +19,14 @@ Use console.log() to clearly show the before-and-after type conversions.
 */
 
 
-let result = "5" - 2;
+let result = Number ("5") - 2; //this works because the string "5" will now be a number
 console.log("The result is: " + result);
 
-let isValid = Boolean("false");
+let isValid = Boolean("false" === "true"); //This works because "false" is not equal to "true"
 if (isValid) {
     console.log("This is valid!");
 }
 
 let age = "25";
-let totalAge = age + 5;
+let totalAge = Number (age) + 5; //This works because "25" is now a number and not a string so it can be added properly
 console.log("Total Age: " + totalAge);
