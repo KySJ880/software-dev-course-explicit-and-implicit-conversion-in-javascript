@@ -30,3 +30,10 @@ if (isValid) {
 let age = "25";
 let totalAge = Number (age) + 5; //This works because "25" is now a number and not a string so it can be added properly
 console.log("Total Age: " + totalAge);
+
+// examples below:
+
+let x;
+console.log(x); //This will run as undefined since x doesn't have a value
+let y = 25;
+console.log (y);
